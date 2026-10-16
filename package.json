@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "eslint": "eslint src",
-    "start": "webpack-dev-server --config webpack.config.dev.js",
-    "build": "webpack --config webpack.config.prod.js",
+    "start": "node init && webpack-dev-server --config webpack.config.dev.js",
+    "build": "node init && webpack --config webpack.config.prod.js",
     "prepublishOnly": "npm run eslint",
     "prepare": "npm run build",
     "publish": "npm publish --access public"
